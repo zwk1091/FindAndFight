@@ -14,6 +14,56 @@
         android:scaleType="fitXY"
         />
     <Button
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        android:id="@+id/ranklist"
+        android:background="#00000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="70dp"
+        />
+    <Button
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        android:id="@+id/warehouse"
+        android:background="#00000000"
+        app:layout_constraintLeft_toRightOf="@id/ranklist"/>
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        app:layout_constraintLeft_toRightOf="@id/warehouse"
+        android:background="#00000000"
+        android:id="@+id/activity"/>
+    <Button
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        android:background="#00000000"
+        app:layout_constraintLeft_toRightOf="@id/activity"/>
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toBottomOf="@id/ranklist"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="40dp"
+        android:background="#00000000"
+        android:id="@+id/indoorMode"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:id="@+id/nationalMode"
+        android:background="#00000000"
+        app:layout_constraintTop_toBottomOf="@id/ranklist"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="150dp"
+        android:layout_marginTop="40dp"/>
 </android.support.constraint.ConstraintLayout>
