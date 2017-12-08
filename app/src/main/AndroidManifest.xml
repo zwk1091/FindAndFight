@@ -19,6 +19,8 @@
         </activity>
         <activity android:name=".IndoorModeActivity"/>
         <activity android:name=".NationalModeActivity"/>
+        <activity android:name=".FriendsRanklistActivity"/>
+        <activity android:name=".FightActivity"/>
     </application>
 
 </manifest>

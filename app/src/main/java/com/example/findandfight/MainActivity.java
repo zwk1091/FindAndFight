@@ -12,11 +12,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button indoorMode=(Button)findViewById(R.id.nationalMode);
-        indoorMode.setOnClickListener(new View.OnClickListener() {
+
+
+        Button nationalMode=(Button)findViewById(R.id.nationalMode);
+        nationalMode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,NationalModeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button ranklist=(Button)findViewById(R.id.ranklist);
+        ranklist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,FriendsRanklistActivity.class);
                 startActivity(intent);
             }
         });
